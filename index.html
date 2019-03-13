@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="The personal website of aspiring professional web developer Alaina Foust">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Alaina Foust - Aspiring Professional Web Developer</title>
+
+    <link rel="stylesheet" type="text/css" href="personal_stylesheet.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Open+Sans" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#a4b4c7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <nav class="sticky-nav" id="navbar">
+        <div class="nav-body">
+            <div class="left-nav">
+                <a href="#home">A/F</a>
+            </div>
+            <div class="right-nav">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page" id="home">
+        <div class="greeting">
+            <div class="greeting-content">
+                <div class="greeting-text">
+                    <div class="grid-1">
+                        <h1 class="item1">Hi, I'm Alaina.</h1>
+                        <h2 class="item2">I'm an aspiring web developer interested in user experience and accessibility.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer" id="about"></div>
+
+        <div class="about" id="about">
+            <div class="about-photo">
+                <img src="photos/hs_4_m.png" alt="Alaina Foust">
+            </div>
+            <div class="about-content">
+                <h3>A Little about Myself</h3>
+                <p>I’m interested in web development as a way to facilitate access to information and services and foster real-life connectivity. I hold a BS in Information Science from the University of Pittsburgh and have work experience as a web editor and IT data analyst. Currently, I’m employed as a pastry assistant to a James Beard Outstanding Pastry Chef nominee. What draws me to a professional career in web development is the same thing that drew me to pastry work, and to caring for houseplants and knitting clothing recreationally: my passion for watching things grow over time and ultimately bring magic to people’s lives. </p>
+            </div>
+        </div>
+
+        <div class="spacer" id="contact"></div>
+
+        <div class="contact" id="contact">
+            <div class="contact-image">
+                <img class="email-image" src="photos/letters-1699639_640.png" alt="Envelope">
+            </div>
+            <div class="contact-content">
+                <h3>Drop Me a Line</h3>
+                <ul class="contact-list">
+                    <li><a class="contact-link" href="https://www.linkedin.com/in/alaina-foust/">LinkedIn</a></li>
+                    <li><a class="contact-link" href="">GitHub</a></li>
+                    <li><a class="contact-link" href="mailto:alainafoust@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright Alaina Foust 2019</p>
+    </div>
+
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky-nav")
+            } else {
+                navbar.classList.remove("sticky-nav");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
